@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <title>Timer</title>
+</head>
+<body>
+    <div class="text">
+        <h1>Таймер</h1>
+        <p id="change">Введіть час в хвилинах:</p>
+    </div>
+    <div class="timer">
+        <button onclick="sub()" class="hide">-</button>
+        <h2 id="time">5</h2>
+        <button onclick="add()" class="hide">+</button>    
+    </div>
+    <button id="startBtn" onclick="startCount()" class="hide">Start</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.43.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -18,11 +19,20 @@
     "husky": "^8.0.3"
   },
   "lint-staged": {
-    "./*.(ts|js|html)": [
+    "*.js": [
       "eslint . --fix"
     ]
   },
   "dependencies": {
-    "eslint": "^8.39.0"
+    "moment": "^2.29.4"
+  },
+  "eslintConfig": {
+    "rules": {
+      "no-unused-vars": "off",
+      "no-plusplus": "off",
+      "no-undef": "off",
+      "prefer-arrow-callback": "off",
+      "prefer-template": "off"
+    }
   }
 }
